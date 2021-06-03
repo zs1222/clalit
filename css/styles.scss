@@ -3,7 +3,7 @@
 
 
 nav, .navbar-brand {
-  padding: 0 !important;
+  // padding: 0 !important;
   direction: rtl;
 }
 
@@ -149,7 +149,7 @@ nav {
 
   .nav-link {
     padding: 4px;
-    widh: 100%;
+    width: 100%;
     flex-grow: 1;
   }
 
@@ -161,7 +161,7 @@ nav {
 
 /* search bar */
 .search-grid {
-  margin-left: 22%;
+  margin-right: 20%;
   position: relative;
   top: -26px;
 }
@@ -183,7 +183,7 @@ nav {
   box-shadow: inset -1px 0px 11px #ccc;
   background-image: url("../assets/svg-icons/search.svg");
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 30px 30px;
   background-position: 5% center;
   border-radius: 50px;
   border: 1px solid #d6d6d6;
@@ -205,7 +205,7 @@ nav {
 
 
 /* responsive */
-@media (screen & max-width: 990px) {
+@media screen and (max-width: 990px) {
   .links {
     display: block;
     margin: 0;

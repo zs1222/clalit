@@ -20,7 +20,7 @@ html body .text-input-placeholder::placeholder {
 }
 
 nav, .navbar-brand {
-  padding: 0 !important;
+  /* padding: 0 !important; */
   direction: rtl;
 }
 
@@ -87,7 +87,7 @@ nav {
   padding: 12px;
   white-space: nowrap;
 }
-@media (screen .header-container .header-item min-width: 768px) {
+@media screen and (min-width: 768px) {
   .header-container .header-item .flyout-menu {
     display: none;
   }
@@ -132,7 +132,7 @@ nav {
 }
 .nav-item + .nav-item .nav-link {
   padding: 4px;
-  widh: 100%;
+  width: 100%;
   flex-grow: 1;
 }
 .nav-item + .nav-item h6 {
@@ -142,7 +142,7 @@ nav {
 
 /* search bar */
 .search-grid {
-  margin-left: 22%;
+  margin-right: 20%;
   position: relative;
   top: -26px;
 }
@@ -164,13 +164,14 @@ nav {
   box-shadow: inset -1px 0px 11px #ccc;
   background-image: url("../assets/svg-icons/search.svg");
   background-repeat: no-repeat;
-  background-size: 18px 18px;
+  background-size: 30px 30px;
   background-position: 5% center;
   border-radius: 50px;
   border: 1px solid #d6d6d6;
   transition: all 250ms ease-in-out;
   backface-visibility: hidden;
   transform-style: preserve-3d;
+  height: 70px;
 }
 
 .search-input::placeholder {
@@ -185,7 +186,7 @@ nav {
 }
 
 /* responsive */
-@media (screen max-width: 990px) {
+@media screen and (max-width: 990px) {
   .links {
     display: block;
     margin: 0;
@@ -228,6 +229,11 @@ nav {
 
   .search-container {
     padding-top: 0 !important;
+    height: initial;
+  }
+
+  .search-input {
+    height: auto;
   }
 }
 .grid .card-box {

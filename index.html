@@ -22,23 +22,19 @@
 
 
 <!--<header>-->
-<nav class="navbar navbar-expand-lg navbar-light">
+<nav class="navbar navbar-expand-lg navbar-light" id="navbar">
+    
+    <a class="navbar-brand d-lg-none" href="#">
+        <img class="header-logo" src="assets/images/logo.png" style="height: 139px;"/>
+    </a>
     <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
             class="navbar-toggler"
             data-target="#navbarSupportedContent" data-toggle="collapse" type="button">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand d-lg-none" href="#">
-        <img class="header-logo" src="assets/images/logo.png" style="height: 139px;"/>
-    </a>
     <a class="navbar-brand d-none d-lg-block" href="#">
         <img src="assets/images/logo.png" style="height: 139px;"/>
     </a>
-    <div class="my-2 my-lg-0 d-lg-none col-12">
-        <div class="search-container text-input-placeholder">
-            <input class="search-input" placeholder="חפש/י הטבה" type="text">
-        </div>
-    </div>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav  row" style="min-width: 100%;">
             <div class="col-12 links mt-4">
@@ -72,14 +68,13 @@
                 </li>
 
             </div>
-            <div class="my-2 my-lg-0 d-none d-lg-block col-7 search-grid">
+            <div class="mb-4 my-lg-0 d-none d-lg-block col-6 search-grid" id="searchField">
                 <div class="search-container">
-                    <input class="search-input text-input-placeholder" placeholder="חפש/י הטבה" type="text">
+                    <input class="search-input" placeholder="חפש/י הטבה" type="text">
                 </div>
             </div>
         </ul>
     </div>
-
 </nav>
 
 <div class="col-12 header-container d-flex row ">
@@ -428,5 +423,21 @@
 <script src="js/jquery-3.3.1.slim.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script>
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            document.getElementById("navbar").innerHTML += 
+            '<div class="col-12 my-4" id="searchInput"><div class="search-container"><input class="search-input" placeholder="חפש/י הטבה" type="text"></div></div>';
+        } else {
+            var searchInput = document.getElementById("searchInput");
+            if (searchInput) {
+                document.getElementById("searchInput").remove();
+            }
+        }
+    }
+    var x = window.matchMedia("(max-width: 990px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+</script>
 </body>
 </html>
