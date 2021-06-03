@@ -1,0 +1,51 @@
+@font-face {
+	font-family: "svg-icons";
+	src: url("svg-icons.eot?ac8ba4c4be28d05d751377fcb2d7e9d4?#iefix") format("embedded-opentype"),
+url("svg-icons.woff2?ac8ba4c4be28d05d751377fcb2d7e9d4") format("woff2"),
+url("svg-icons.woff?ac8ba4c4be28d05d751377fcb2d7e9d4") format("woff");
+}
+
+.svg-icons {
+	line-height: 1;
+}
+
+.svg-icons:before {
+	font-family: svg-icons !important;
+	font-style: normal;
+	font-weight: normal !important;
+	vertical-align: top;
+}
+
+.svg-icons-arrow:before {
+	content: "\f101";
+}
+.svg-icons-book:before {
+	content: "\f102";
+}
+.svg-icons-culture:before {
+	content: "\f103";
+}
+.svg-icons-more-2:before {
+	content: "\f104";
+}
+.svg-icons-search:before {
+	content: "\f105";
+}
+.svg-icons-share:before {
+	content: "\f106";
+}
+.svg-icons-sports:before {
+	content: "\f107";
+}
+.svg-icons-tickets:before {
+	content: "\f108";
+}
+.svg-icons-tools-and-utensils:before {
+	content: "\f109";
+}
+.svg-icons-transportation:before {
+	content: "\f10a";
+}
+.svg-icons-travelling:before {
+	content: "\f10b";
+}

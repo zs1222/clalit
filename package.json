@@ -1,0 +1,17 @@
+{
+  "name": "clalit-49",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webfontGenerator.js",
+  "dependencies": {
+    "webfonts-generator": "^0.4.0",
+    "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "icons": "node webfontGenerator.js "
+  },
+  "author": "",
+  "license": "ISC"
+}
